@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://drive.google.com/uc?id=176BpLyAQugoQkLgCkCcWat_u6AcmgbXs");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .navbar {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            background: transparent;
+        }
+        .navbar-logo {
+            grid-column: 1/3;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+        }
+        .navbar-logo-img {
+            width: 160px;
+        }
+        .navbar-menu-1 {
+            grid-column: 3/7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+        .navbar-menu-1-items:hover {
+            color: orangered;
+        }
+        .navbar-menu-2 {
+            grid-column: 11/13;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 20px;
+        }
+        .navbar-menu-2-items{
+            cursor: pointer;
+        }
+        .navbar-menu-2-button{
+            cursor: pointer;
+            border: 0;
+            padding: 10px 20px;
+            color: #d6002f;
+            font-weight: 600;
+            border-radius: 5px;
+            letter-spacing: 1px;
+        }
+
+        .text-box  {
+            margin-top: 16%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-box-heading {
+            font-size: 120px;
+        }
+        .text-box-button {
+            border: 0;
+            font-size: 16px;
+            margin-top: 30px;
+            padding: 15px 50px;
+            border-radius: 50px;
+            background: linear-gradient(45deg,rgb(253,38,122),rgb(255,96,54));
+            color: #fff;
+        }
+        
+        .testimonials {
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            
+        }
+        .card {
+            border:  1px solid black;
+            height: 200px;
+            padding: 25px;
+            box-shadow: rgba(101, 110, 123, 0.12) 0px 2px 6px 0px;
+            border-radius: 5px;
+        }
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+        .card-content {
+            margin-top: 12px;
+            color: #505965;
+            line-height: 21px;
+        }
+        .footer {
+         margin-top: 70px;
+         line-height: 25px;
+         margin-left: 90px;
+            
+        }
+        .footer-sec-1 {
+            width: 80%;
+            /* margin: auto; */
+            margin-top: 30px;
+            margin-bottom: 30px;
+            /* margin-left: -5px; */
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 70px; 
+            
+
+        }
+        .icon {
+            padding: 5px;
+           
+        }
+        .mid-hr {
+            margin-left: 0;
+            margin-right: 90px;
+        }
+        .footer-sec-2 {
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            
+        }
+        .footer-sec-3 {
+            width: 95%;
+            margin-top: 20px;
+           color: #505965;
+            margin-bottom: 10px;
+            
+        
+        }
+        .footer-sec-4 {
+            width: 95%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            color: #505965;
+            padding: 10px;
+            
+        }
+        .footer-sec-4-foot {
+            margin-left: 360px;
+        }
+    </style>
+    <title>Tinder</title>
+</head>
+<body>
+    <div class="header">
+      <div class="navbar">
+        <div class="navbar-logo">
+          <img
+            src="https://drive.google.com/uc?id=1W83StbTMiJ6rqvdF69_WfJ00DWyT5UKo"
+            alt="tinder-logo"
+            class="navbar-logo-img"
+          />
+        </div>
+        <div class="navbar-menu-1">
+          <div class="navbar-menu-1-items">Products</div>
+          <div class="navbar-menu-1-items">Learn</div>
+          <div class="navbar-menu-1-items">Safety</div>
+          <div class="navbar-menu-1-items">Support</div>
+          <div class="navbar-menu-1-items">Download</div>
+        </div>
+        <div class="navbar-menu-2">
+          <div class="navbar-menu-2-items">ENGLISH(UK)</div>
+          <button class="navbar-menu-2-button">Log in</button>
+        </div>
+      </div>
+      <div class="text-box">
+        <h1 class="text-box-heading">Start something epic.</h1>
+        <button class="text-box-button">Create account</button>
+      </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="card">
+            <h1 class="card-title">Gabriel and Fiance </h1>
+            <hr class="card-title"> 
+            <p class="card-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam illo veniam delectus consectetur. Vel molestias, voluptatibus et neque, iure eum vero animi dolorem qui facilis doloribus nobis, cum quidem! Eaque?</p>
+        </div>
+        <div class="card">
+            <h1 class="card-title">Rebecca Stephenson </h1>
+            <hr class="card-divider">
+            <p class="card-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam illo veniam delectus consectetur. Vel molestias, voluptatibus et neque, iure eum vero animi dolorem qui facilis doloribus nobis, cum quidem! Eaque?</p>
+        </div>
+        <div class="card">
+            <h1 class="card-title">Gabriel and Fiance </h1>
+            <hr class="card-title">
+            <p class="card-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam illo veniam delectus consectetur. Vel molestias, voluptatibus et neque, iure eum vero animi dolorem qui facilis doloribus nobis, cum quidem! Eaque?</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-sec-1">
+            <div><h1 class="card-title">LEGAL</h1>
+            <p style="color: #505965;">Privacy <br> Terms <br> Cookies Policy <br> Intellectual Property</p></div>
+            <div><h1 class="card-title">CAREERS</h1>
+            <p  style="color: #505965;">Careers Portal <br> Tech Blog</p></div>
+            <div><h1 class="card-title">SOCIAL</h1><span class="icon">
+            <i class="fa fa-instagram" style="font-size:30px"></i> <i class="fa fa-facebook" style="font-size:30px"></i>  <i class="fa fa-youtube" style="font-size:30px"></i> <i class="fa fa-twitter" style="font-size:30px"></i></span>
+            </div>
+            <div>
+                <p  style="color: #505965;">FQA <br> Destination <br> Press Room <br> Contact <br> Promo Code</p>
+            </div> 
+        </div><hr class="mid-hr">
+        <div class="footer-sec-2">
+            <div><h2 style="margin-top: 10px;"> GET THE APP!</h2></div>
+            <div class="footer-img"><img src="https://tinder.com/static/build/l/d256a5b510a685030be375c63a9010e9.webp" style="width: 150px;" alt=""></div>
+            <div> 
+                <img class="footer-img" src="https://tinder.com/static/build/l/03aed264f8539c570e9bc80ba6b60d92.webp" style="width: 175px;  margin-top: -8px;" alt="">
+            </div>
+            
+        </div>
+        <div class="footer-sec-3">
+            <p>Single people, listen up: If you’re looking for love, want to start dating, or just keep it casual, you need to be on Tinder. With over 55 billion matches made, it’s the place to be to meet your next best match. Let’s be real, the dating landscape looks very different today, as most people are meeting online. With Tinder, the world’s most popular free dating app, you have millions of other single people at your fingertips and they’re all ready to meet someone like you. Whether you’re straight or in the LGBTQIA community, Tinder’s here to bring you all the sparks.</p><br>
+            <p>There really is something for everyone on Tinder. Want to get into a relationship? You got it. Trying to find some new friends? Say no more. New kid on campus and looking to make the most of your college experience? Tinder U’s got you covered. Tinder isn’t your average dating site — it’s the most diverse dating app, where adults of all backgrounds and experiences are invited to make connections, memories, and everything in between.</p>
+        </div>
+        <hr class="mid-hr">
+        <div class="footer-sec-4">
+            <div>FAQ &nbsp;/  &nbsp;Safety Tips  &nbsp;/  &nbsp;Terms  &nbsp;/ &nbsp;Cookie Policy  &nbsp;/ &nbsp;Privacy Settings</div>
+            <div class="footer-sec-4-foot">2022 Match Group, LLC, All Rights Reserved.</div>
+        </div>
+        
+    </div>
+  </body>
+</html>
+<!-- 
+tinder header bg image - https://drive.google.com/uc?id=176BpLyAQugoQkLgCkCcWat_u6AcmgbXs
+tinder logo in navbar - https://drive.google.com/uc?id=1W83StbTMiJ6rqvdF69_WfJ00DWyT5UKo -->
+
